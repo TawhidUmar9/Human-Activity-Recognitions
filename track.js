@@ -66,16 +66,8 @@ function runAnalyze() {
               }
           };
 
-          // Two CSV files
-          ['accelerometer_data.csv', 'gyroscope_data.csv'].forEach(renameWithTs);
+          ['accelerometer_data.csv', 'gyroscope_data.csv', 'combined_sensor_plot.html'].forEach(renameWithTs);
 
-          // Three HTML files (pick up to three found in current directory)
-          const htmlFiles = fs
-              .readdirSync(__dirname)
-              .filter((f) => /\.html$/i.test(f))
-              .slice(0, 3);
-
-          htmlFiles.forEach(renameWithTs);
       } catch (e) {
           console.warn('Post-analysis renaming encountered an error:', e.message);
       } finally {

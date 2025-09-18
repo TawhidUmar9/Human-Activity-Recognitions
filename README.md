@@ -12,3 +12,9 @@ The app streams or logs raw data from the following smartphone sensors:
 - Gyroscope (x, y, z)
 
 Finally the data is visualized as plots.
+
+# How to Use
+
+- Run and start SensorServer while keeping both devices under same network and copy the address to address.txt
+- Run: node track.js and start praying while keeping phone in pocket
+- ^C to stop tracking and save record
