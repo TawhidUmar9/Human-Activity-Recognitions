@@ -15,6 +15,14 @@ Finally the data is visualized as plots.
 
 # How to Use
 
+- Setup python venv
+
+```
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
 - Run and start SensorServer while keeping both devices under same network and copy the address to address.txt
 - Run: node track.js and start praying while keeping phone in pocket
 - ^C to stop tracking and save record
